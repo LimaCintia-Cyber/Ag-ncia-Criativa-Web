@@ -1,0 +1,168 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Tipografia e cores */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+/* Cabeçalho com Flexbox */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  background-color: #111;
+  color: #fff;
+}
+
+.logo img {
+  max-height: 3rem;
+}
+
+.menu ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Banner responsivo */
+.banner {
+  background: url('img/banner.jpg') center/cover no-repeat;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  padding: 2rem;
+}
+
+.banner h1 {
+  font-size: 3rem;
+}
+
+.banner p {
+  font-size: 1.5rem;
+}
+
+/* Seções gerais */
+section {
+  padding: 4rem 2rem;
+}
+
+/* Grid de serviços */
+.grid-servicos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+.servico {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.servico img {
+  width: 100%;
+  max-width: 120px; /* Limita o tamanho da imagem */
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+
+.servico p {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0;
+}
+.depoimento {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.depoimento img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.depoimento blockquote {
+  font-style: italic;
+  background-color: #fff;
+  padding: 1rem;
+  border-left: 4px solid #111;
+  margin: 0;
+}
+
+
+
+/* Depoimentos */
+.depoimentos blockquote {
+  margin: 1rem 0;
+  font-style: italic;
+  background-color: #fff;
+  padding: 1rem;
+  border-left: 4px solid #111;
+}
+
+/* Contato */
+.contato form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin-top: 2rem;
+}
+
+.contato input,
+.contato textarea {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.3rem;
+}
+
+.contato button {
+  padding: 1rem;
+  background-color: #111;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .menu ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .banner h1 {
+    font-size: 2rem;
+  }
+
+  .banner p {
+    font-size: 1rem;
+  }
+}
