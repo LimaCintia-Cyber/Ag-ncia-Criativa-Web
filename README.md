@@ -25,10 +25,6 @@ agencia-criativa-web/
 Clone o repositório:
 
 bash
-git clone https://github.com/seu-usuario/agencia-criativa-web.git
-Navegue até a pasta:
-
-bash
 cd agencia-criativa-web
 Abra o arquivo index.html em seu navegador ou use uma extensão como Live Server no VS Code.
 
@@ -49,6 +45,3 @@ Imagens otimizadas e layout adaptável
 
 📱 Responsividade
 O site foi testado em diferentes resoluções e dispositivos, com layout fluido e imagens adaptadas. O menu de navegação pode ser convertido em hambúrguer com JavaScript (opcional).
-
-✉️ Contato
-Para dúvidas ou sugestões, envie um e-mail para: contato@agenciacriativaweb.com.br
