@@ -5,7 +5,9 @@
   box-sizing: border-box;
 }
 
-/* Tipografia e cores */
+/* ===========================
+   TIPOGRAFIA E CORES
+   =========================== */
 body {
   font-family: 'Segoe UI', sans-serif;
   line-height: 1.6;
@@ -13,8 +15,20 @@ body {
   background-color: #f9f9f9;
 }
 
-/* Cabeçalho com Flexbox */
-header {
+/* ===========================
+   CLASSES UTILITÁRIAS
+   =========================== */
+.card {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+/* ===========================
+   HEADER
+   =========================== */
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -23,23 +37,31 @@ header {
   color: #fff;
 }
 
-.logo img {
+.header__logo-img {
   max-height: 3rem;
 }
 
-.menu ul {
+.header__nav-list {
   display: flex;
   gap: 2rem;
   list-style: none;
 }
 
-.menu a {
+.header__nav-link {
   color: #fff;
   text-decoration: none;
   font-weight: bold;
+  transition: color 0.3s;
 }
 
-/* Banner responsivo */
+.header__nav-link:hover {
+  color: #f9f9f9;
+  text-decoration: underline;
+}
+
+/* ===========================
+   BANNER
+   =========================== */
 .banner {
   background: url('img/banner.jpg') center/cover no-repeat;
   height: 60vh;
@@ -52,90 +74,95 @@ header {
   padding: 2rem;
 }
 
-.banner h1 {
+.banner__title {
   font-size: 3rem;
 }
 
-.banner p {
+.banner__subtitle {
   font-size: 1.5rem;
 }
 
-/* Seções gerais */
-section {
+/* ===========================
+   SOBRE
+   =========================== */
+.sobre {
   padding: 4rem 2rem;
 }
 
-/* Grid de serviços */
-.grid-servicos {
+/* ===========================
+   SERVIÇOS
+   =========================== */
+.servicos {
+  padding: 4rem 2rem;
+}
+
+.servicos__grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 1.5rem;
   padding: 1rem;
 }
 
-.servico {
-  background-color: #fff;
-  padding: 1rem;
-  border-radius: 0.5rem;
-  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+.servicos__item {
   text-align: center;
 }
 
-.servico img {
+.servicos__item-img {
   width: 100%;
-  max-width: 120px; /* Limita o tamanho da imagem */
+  max-width: 120px;
   height: auto;
   margin-bottom: 0.5rem;
 }
 
-.servico p {
+.servicos__item-title {
   font-size: 1rem;
   font-weight: 600;
   margin: 0;
 }
-.depoimento {
+
+/* ===========================
+   DEPOIMENTOS
+   =========================== */
+.depoimentos {
+  padding: 4rem 2rem;
+}
+
+.depoimentos__item {
   display: flex;
   align-items: center;
   gap: 1rem;
   margin-bottom: 2rem;
 }
 
-.depoimento img {
+.depoimentos__item-img {
   width: 80px;
   height: 80px;
   border-radius: 50%;
   object-fit: cover;
 }
 
-.depoimento blockquote {
-  font-style: italic;
-  background-color: #fff;
-  padding: 1rem;
-  border-left: 4px solid #111;
-  margin: 0;
-}
-
-
-
-/* Depoimentos */
-.depoimentos blockquote {
+.depoimentos__item-text {
   margin: 1rem 0;
   font-style: italic;
-  background-color: #fff;
-  padding: 1rem;
   border-left: 4px solid #111;
 }
 
-/* Contato */
-.contato form {
+/* ===========================
+   CONTATO
+   =========================== */
+.contato {
+  padding: 4rem 2rem;
+}
+
+.contato__form {
   display: flex;
   flex-direction: column;
   max-width: 500px;
   margin-top: 2rem;
 }
 
-.contato input,
-.contato textarea {
+.contato__form-input,
+.contato__form-textarea {
   padding: 1rem;
   margin-bottom: 1rem;
   font-size: 1rem;
@@ -143,7 +170,7 @@ section {
   border-radius: 0.3rem;
 }
 
-.contato button {
+.contato__form-button {
   padding: 1rem;
   background-color: #111;
   color: #fff;
@@ -151,18 +178,24 @@ section {
   cursor: pointer;
 }
 
-/* Responsividade */
+/* ===========================
+   RESPONSIVIDADE
+   =========================== */
 @media (max-width: 768px) {
-  .menu ul {
+  .header__nav-list {
     flex-direction: column;
     gap: 1rem;
   }
 
-  .banner h1 {
+  .banner__title {
     font-size: 2rem;
   }
 
-  .banner p {
+  .banner__subtitle {
     font-size: 1rem;
+  }
+
+  .header__logo-img {
+    max-height: 2.5rem;
   }
 }

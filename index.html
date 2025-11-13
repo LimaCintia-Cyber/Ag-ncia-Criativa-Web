@@ -1,112 +1,125 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Agência Criativa Web</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
 
+  <!--Header-->
   <!-- Cabeçalho com logo e menu -->
-  <header>
-    <div class="logo">
-      <img src="img/logo.png" alt="Agência Criativa Web" />
+  <header class="header">
+    <div class="header__logo">
+      <img class="header__logo-img" src="img/logo.png" alt="Logo da Agência" />
     </div>
-    <nav class="menu">
-      <ul>
-        <li><a href="#home">Início</a></li>
-        <li><a href="#sobre">Sobre Nós</a></li>
-        <li><a href="#servicos">Serviços</a></li>
-        <li><a href="#depoimentos">Depoimentos</a></li>
-        <li><a href="#contato">Contato</a></li>
+    <nav class="header__nav">
+      <ul class="header__nav-list">
+        <li class="header__nav-item"><a class="header__nav-link" href="#home">Início</a></li>
+        <li class="header__nav-item"><a class="header__nav-link" href="#sobre">Sobre Nós</a></li>
+        <li class="header__nav-item"><a class="header__nav-link" href="#servicos">Serviços</a></li>
+        <li class="header__nav-item"><a class="header__nav-link" href="#depoimentos">Depoimentos</a></li>
+        <li class="header__nav-item"><a class="header__nav-link" href="#contato">Contato</a></li>
       </ul>
     </nav>
   </header>
 
+  <!--Banner-->
   <!-- Seção Home -->
   <section id="home" class="banner">
-    <h1>Bem-vindo à Agência Criativa Web</h1>
-    <p>Design inteligente para marcas que querem se destacar.</p>
+    <h1 class="banner__title">Bem-vindo à Agência Criativa Web</h1>
+    <p class="banner__subtitle">Design inteligente para marcas que querem se destacar.</p>
   </section>
 
   <!-- Seção Sobre Nós -->
   <section id="sobre" class="sobre">
-    <h2>Sobre Nós</h2>
-    <p>Somos uma agência digital apaixonada por criar experiências visuais que conectam marcas e pessoas. Valorizamos inovação, autenticidade e excelência.</p>
+    <h2 class="sobre__title">Sobre Nós</h2>
+    <p class="sobre__subtitle">Somos uma agência digital apaixonada por criar experiências visuais que conectam marcas e
+      pessoas. Valorizamos inovação, autenticidade e excelência.</p>
   </section>
 
   <!-- Seção Serviços -->
   <section id="servicos" class="servicos">
-    <h2>Serviços</h2>
-    <div class="grid-servicos">
-      <div class="servico">
-        <img src="img/Branding.png" alt="Branding" />
-        <p>Branding</p>
-      </div>
-      
-      <div class="servico">
-        <img src="img/Densenvolvimento web.png" alt="Densenvolvimento Web" />
-        <p>Densenvolvimento Web</p>
-      </div>
-      
-      <div class="servico">
-        <img src="img/Design Gráfico.png" alt="Design Gráfico" />
-        <p>Design Gráfico</p>
+    <h2 class="servicos__title">Serviços</h2>
+    <div class="servicos__grid">
+      <div class="servicos__item card">
+        <img class="servicos__item-img" src="img/branding.png" alt="Branding" />
+        <p class="servicos__item-title">Branding</p>
       </div>
 
-      <div class="servico">
-        <img src="img/Marketing Digital.png" alt="Marketing Digital" />
-        <p>Marketing Digital</p>
+      <div class="servicos__item card">
+        <img class="servicos__item-img" src="img/desenvolvimento-web.png" alt="Desenvolvimento Web" />
+        <p class="servicos__item-title">Densenvolvimento Web</p>
       </div>
 
-      <div class="servico">
-        <img src="img/UX UI Design.png" alt="UX/UI Design" />
-        <p>UX/UI Design</p>
+      <div class="servicos__item card">
+        <img class="servicos__item-img" src="img/design-grafico.png" alt="Design Gráfico" />
+        <p class="servicos__item-title">Design Gráfico</p>
       </div>
 
-      <div class="servico">
-        <img src="img/Produção de Conteúdo.png" alt="Produção de Conteudo" />
-        <p>Produção de Conteúdo</p>
+      <div class="servicos__item card">
+        <img class="servicos__item-img" src="img/marketing-digital.png" alt="Marketing Digital" />
+        <p class="servicos__item-title">Marketing Digital</p>
+      </div>
+
+      <div class="servicos__item card">
+        <img class="servicos__item-img" src="img/ux-ui-design.png" alt="UX/UI Design" />
+        <p class="servicos__item-title">UX/UI Design</p>
+      </div>
+
+      <div class="servicos__item card">
+        <img class="servicos__item-img" src="img/producao-conteudo.png" alt="Produção de Conteudo" />
+        <p class="servicos__item-title">Produção de Conteúdo</p>
       </div>
     </div>
   </section>
 
   <!-- Seção Depoimentos -->
   <section id="depoimentos" class="depoimentos">
-    <h2>Depoimentos</h2>
-    <div class="depoimento">
-        <img src="img/Ana Souza.jpg" alt="Ana Souza">
-    <blockquote>"Profissionais incríveis! Meu site ficou moderno e funcional." — Ana Souza</blockquote>
+    <h2 class="depoimentos__title">Depoimentos</h2>
+
+    <div class="depoimentos__item">
+      <img class="depoimentos__item-img" src="img/ana-souza.jpg" alt="Ana Souza">
+      <blockquote class="depoimentos__item-text card">
+        "Profissionais incríveis! Meu site ficou moderno e funcional." — Ana Souza
+      </blockquote>
     </div>
 
-    <div class="depoimento">
-     <img src="img/Carlos Lima.jpg" alt="Carlos Lima">
-    <blockquote>"A identidade visual criada por eles elevou minha marca." — Carlos Lima</blockquote>
-</div>
+    <div class="depoimentos__item">
+      <img class="depoimentos__item-img" src="img/carlos-lima.jpg" alt="Carlos Lima">
+      <blockquote class="depoimentos__item-text card">
+        "A identidade visual criada por eles elevou minha marca." — Carlos Lima
+      </blockquote>
+    </div>
 
-<div class="depoimento">
-    <img src="img/Fernanda Rocha.jpg" alt="Fernanda Rocha">
-    <blockquote>"Atendimento excelente e entrega pontual." — Fernanda Rocha</blockquote>
-</div>
+    <div class="depoimentos__item">
+      <img class="depoimentos__item-img" src="img/fernanda-rocha.jpg" alt="Fernanda Rocha">
+      <blockquote class="depoimentos__item-text card">
+        "Atendimento excelente e entrega pontual." — Fernanda Rocha
+      </blockquote>
+    </div>
 
   </section>
 
   <!-- Seção Contato -->
   <section id="contato" class="contato">
-  <h2>Contato</h2>
+    <h2 class="contato__title">Contato</h2>
     <p>📍 Rua Criativa, 123 - Brasília, DF</p>
     <p>📞 (61) 99999-9999</p>
     <p>📧 contato@agenciacriativaweb.com.br</p>
 
-    <form>
-      <input type="text" name="nome" placeholder="Seu nome" required />
-      <input type="email" name="email" placeholder="Seu e-mail" required />
-      <textarea name="mensagem" rows="5" placeholder="Sua mensagem" required></textarea>
-      <button type="submit">Enviar</button>
+    <form class="contato__form">
+      <input class="contato__form-input" type="text" name="nome" placeholder="Seu nome" required />
+      <input class="contato__form-input" type="email" name="email" placeholder="Seu e-mail" required />
+      <textarea class="contato__form-textarea" name="mensagem" rows="5" placeholder="Sua mensagem" required></textarea>
+      <button class="contato__form-button" type="submit">Enviar</button>
     </form>
 
   </section>
 
 </body>
+
 </html>
