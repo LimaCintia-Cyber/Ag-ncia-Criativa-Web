@@ -1,0 +1,82 @@
+
+// ===========================
+// Arquivo: _componentes.scss
+// Função: Estilos de componentes reutilizáveis
+// Inclui cards, formulários e responsividade
+// ===========================
+@use 'variaveis' as v;
+@use 'mixins';
+
+.servicos {
+  padding: 4rem 2rem;
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1.5rem;
+    padding: v.$espacamento;
+  }
+
+  &__item {
+    text-align: center;
+
+    &-img {
+      width: 100%;
+      max-width: 120px;
+      margin-bottom: 0.5rem;
+    }
+
+    &-title {
+      font-size: 1rem;
+      font-weight: 600;
+    }
+  }
+}
+
+.depoimentos {
+  padding: 4rem 2rem;
+
+  &__item {
+    @include mixins.flex-center(1rem);
+    margin-bottom: 2rem;
+
+    &-img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    &-text {
+      @include mixins.card;
+      font-style: italic;
+      border-left: 4px solid v.$cor-primaria;
+    }
+  }
+}
+
+.contato {
+  padding: 4rem 2rem;
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin-top: 2rem;
+
+    &-input,
+    &-textarea {
+      padding: v.$espacamento;
+      margin-bottom: v.$espacamento;
+      border: 1px solid #ccc;
+      border-radius: 0.3rem;
+    }
+
+    &-button {
+      @include mixins.card; // ✅ corrigido com namespace
+      background-color: v.$cor-primaria;
+      color: #fff;
+      cursor: pointer;
+    }
+  }
+}

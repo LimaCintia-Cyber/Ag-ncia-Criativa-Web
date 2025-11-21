@@ -1,0 +1,43 @@
+// ===========================
+// Arquivo: _layout.scss
+// Função: Estrutura geral da página
+// ===========================
+@use 'variaveis' as v;
+@use 'mixins';
+
+.header {
+  background-color: v.$cor-primaria;
+  padding: v.$espacamento;
+
+  &__logo-img {
+    max-height: 3rem;
+  }
+
+  &__nav-list {
+    @include mixins.flex-center(2rem); // agora funciona
+    list-style: none;
+  }
+
+  &__nav-link {
+    color: #fff;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.banner {
+  text-align: center;
+  padding: 4rem 2rem;
+
+  &__title {
+    font-size: 3rem;
+    margin-bottom: calc(v.$espacamento / 2);
+  }
+
+  &__subtitle {
+    font-size: 1.2rem;
+  }
+}

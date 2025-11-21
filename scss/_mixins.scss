@@ -1,0 +1,21 @@
+// ===========================
+// Arquivo: _mixins.scss
+// Função: Definição de mixins reutilizáveis
+// ===========================
+@use 'variaveis' as v;
+
+// Centraliza elementos com flexbox
+@mixin flex-center($gap: 1rem) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: $gap;
+}
+
+// Estilo de card reutilizável
+@mixin card {
+  padding: v.$espacamento; // ✅ corrigido com namespace
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  background-color: #fff;
+}

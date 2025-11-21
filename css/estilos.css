@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+}
+
+.header {
+  background-color: #111;
+  padding: 1rem;
+}
+.header__logo-img {
+  max-height: 3rem;
+}
+.header__nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  list-style: none;
+}
+.header__nav-link {
+  color: #fff;
+  text-decoration: none;
+}
+.header__nav-link:hover {
+  text-decoration: underline;
+}
+
+.banner {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+.banner__title {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+.banner__subtitle {
+  font-size: 1.2rem;
+}
+
+.servicos {
+  padding: 4rem 2rem;
+}
+.servicos__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem;
+}
+.servicos__item {
+  text-align: center;
+}
+.servicos__item-img {
+  width: 100%;
+  max-width: 120px;
+  margin-bottom: 0.5rem;
+}
+.servicos__item-title {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.depoimentos {
+  padding: 4rem 2rem;
+}
+.depoimentos__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.depoimentos__item-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.depoimentos__item-text {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  font-style: italic;
+  border-left: 4px solid #111;
+}
+
+.contato {
+  padding: 4rem 2rem;
+}
+.contato__form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin-top: 2rem;
+}
+.contato__form-input, .contato__form-textarea {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.3rem;
+}
+.contato__form-button {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  background-color: #111;
+  color: #fff;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=estilos.css.map */

@@ -1,0 +1,16 @@
+// ===========================
+// Arquivo: _base.scss
+// Função: Reset e estilos básicos da página
+// ===========================
+@use 'variaveis' as v;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: v.$fonte-principal;
+  line-height: 1.6;
+}
