@@ -1,47 +1,33 @@
-🖌️ Agência Criativa Web
-Site institucional fictício de uma agência de design digital, desenvolvido com foco em design responsivo, Flexbox, CSS Grid e boas práticas de HTML5 e CSS3.
+# Projeto SCSS - Estilos Globais
 
-📌 Objetivo
-Criar uma página moderna, atrativa e adaptável a diferentes tamanhos de tela, destacando os serviços da agência, depoimentos de clientes e um formulário de contato funcional.
+Este projeto organiza os estilos em **SCSS** utilizando boas práticas de modularização.
 
-📁 Estrutura do Projeto
+## 📂 Estrutura de pastas
+
+scss/ ├── _variaveis.scss # Definição de variáveis globais ├── _mixins.scss # Mixins reutilizáveis ├── _base.scss
+# Reset e estilos básicos ├── _layout.scss
+# Estrutura geral da página ├── _componentes.scss
+# Estilos de componentes reutilizáveis └── estilos.scss
+# Arquivo principal que importa todos os parciais
+
 Código
-agencia-criativa-web/
-├── index.html
-├── estilos.css
-└── img/
-    ├── logo.png
-    ├── banner.jpg
-    ├── branding.png
-    ├── desenvolvimento-web.png
-    ├── design-grafico.png
-    ├── marketing-digital.png
-    ├── ux-ui-design.png
-    ├── producao-conteudo.png
-    ├── ana-souza.jpg
-    ├── carlos-lima.jpg
-    └── fernanda-rocha.jpg
-🚀 Como visualizar localmente
-Clone o repositório:
+
+## 🚀 Como usar
+
+1. Instale as dependências do Sass (se necessário):
+   ```bash
+   npm install -g sass
+Compile o SCSS para CSS:
 
 bash
-cd agencia-criativa-web
-Abra o arquivo index.html em seu navegador ou use uma extensão como Live Server no VS Code.
+sass scss/estilos.scss css/estilos.css
+Inclua o css/estilos.css no seu HTML:
 
-🧰 Tecnologias utilizadas
-HTML5 semântico
+html
+<link rel="stylesheet" href="css/estilos.css">
+✨ Recursos
+Variáveis centralizadas para cores, tipografia e espaçamento.
 
-CSS3 com:
+Mixins para reutilização de estilos (ex.: flex-center, card).
 
-Flexbox para layout de cabeçalho e depoimentos
-
-CSS Grid para a seção de serviços
-
-Unidades relativas (rem, %, vh, vw, fr)
-
-Media queries para responsividade
-
-Imagens otimizadas e layout adaptável
-
-📱 Responsividade
-O site foi testado em diferentes resoluções e dispositivos, com layout fluido e imagens adaptadas. O menu de navegação pode ser convertido em hambúrguer com JavaScript (opcional).
+Estrutura modular para facilitar manutenção e escalabilidade.
