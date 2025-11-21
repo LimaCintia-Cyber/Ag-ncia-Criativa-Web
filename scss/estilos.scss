@@ -3,3 +3,13 @@
 @use 'base';
 @use 'layout';
 @use 'componentes';
+// ===========================
+// Arquivo: estilos.scss
+// Função: Arquivo principal que importa todos os parciais
+// ===========================
+
+@use 'variaveis';
+@use 'mixins';
+@use 'base';
+@use 'layout';
+@use 'componentes';
